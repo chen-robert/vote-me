@@ -1,0 +1,36 @@
+<head>
+  <title>Clicker Application</title>
+</head>
+<body>
+  <iframe width="0" height="0" border="0" name="dummy" id="dummy"></iframe>
+  <form action="/api/update/back" target="dummy" method="POST">
+    <button class="secondary" type="submit">←</button>
+  </form>
+  <form action="/api/update/forward" target="dummy" method="POST">
+    <button type="submit">→</button>
+  </form>
+  <style>
+    button {
+      width: 100vw;
+      height: 70vh;
+      font-size: 150px;
+      margin: 0;
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+    .secondary {
+      height: 30vh;
+    }
+    form {
+      margin: 0;
+    }
+    body {
+      height: 100%;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</body>
